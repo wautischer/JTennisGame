@@ -25,7 +25,7 @@ public class TennisPanel extends JPanel implements KeyListener, ActionListener {
     public double angel;
     public float speed;
     public boolean winner;
-    public String s;
+    public String winnerP;
     public int winns1;
     public int winns2;
     Random rand = new Random();
@@ -133,13 +133,13 @@ public class TennisPanel extends JPanel implements KeyListener, ActionListener {
         g2d.drawString("Won games:"+winns2,getWidth()-120,20);
         //Winner
         if (count1 == 13) {
-            s = "PLAYER1 WON!!";
+            winnerP = "PLAYER1 WON!!";
             winner = true;
             //Won Games
             winns1 ++;
         }
         if (count2 == 13){
-            s = "PLAYER2 WON!!";
+            winnerP = "PLAYER2 WON!!";
             winner = true;
             //Won Games
             winns2 ++;
@@ -154,7 +154,7 @@ public class TennisPanel extends JPanel implements KeyListener, ActionListener {
             g2d.fillRect(0, 0, getWidth()-1, getHeight()-1);
             g2d.setColor(Color.yellow);
             g2d.setFont(new Font("ARIAL",Font.BOLD, 60));
-            g2d.drawString(s, getWidth()/2-220,getHeight()/2);
+            g2d.drawString(winnerP, getWidth()/2-220,getHeight()/2);
             g2d.setColor(Color.red);
             g2d.setFont(new Font("ARIAL",Font.BOLD,30));
             g2d.drawString("Press N to play again",getWidth()/2-140,getHeight()/2+180 );
