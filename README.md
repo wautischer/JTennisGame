@@ -1,6 +1,6 @@
 Simple Java Game 
 
-UPDATE 26.04.22
+UPDATE 04/26/22
 - Bigger Player and Ball
 - Game goes up to 13 points
 - Winner screen with new game button
